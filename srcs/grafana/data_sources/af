@@ -1,0 +1,1 @@
+{"id":3,"orgId":1,"name":"vsftpd","type":"influxdb","typeLogoUrl":"public/app/plugins/datasource/influxdb/img/influxdb_logo.svg","access":"proxy","url":"10.96.100.11:8086","password":"","user":"telegraf","database":"vsftpd","basicAuth":true,"isDefault":false,"jsonData":{"tlsSkipVerify":true},"readOnly":false}

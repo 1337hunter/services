@@ -1,0 +1,37 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ftps-service
+spec:
+  selector:
+    app: vsftpd
+  ports:
+    - name: port20
+      protocol: TCP
+      port: 20
+      targetPort: 20
+    - name: active
+      protocol: TCP
+      port: 21
+      targetPort: 21
+    - name: passive0
+      protocol: TCP
+      port: 21100 
+      targetPort: 21100
+    - name: passive1
+      protocol: TCP
+      port: 21101
+      targetPort: 21101
+    - name: passive2
+      protocol: TCP
+      port: 21102
+      targetPort: 21102
+    - name: passive3
+      protocol: TCP
+      port: 21103
+      targetPort: 21103
+    - name: passive4
+      protocol: TCP
+      port: 21104
+      targetPort: 21104
+  type: LoadBalancer

@@ -1,0 +1,8 @@
+CREATE DATABASE wpdb;
+CREATE USER 'gbright'@'%' identified by 'admin';
+GRANT ALL PRIVILEGES ON wpdb.* TO 'gbright'@'%' IDENTIFIED BY 'admin';
+FLUSH PRIVILEGES;
+
+INSERT INTO `wpdb`.`wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('111', 'user1', MD5('user1'), 'user1', 'user1@localhost.com', 'http://localhost', '2011-06-07 00:00:00', '', '0', 'user1');
+
+INSERT INTO `wpdb`.`wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES ('222', 'user2', MD5('user2'), 'user2', 'user2@localhost.com', 'http://localhost', '2011-06-07 00:00:01', '', '0', 'user2');
